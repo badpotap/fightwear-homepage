@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d20b18">
+  <meta name="description" content="Экипировка для бокса, MMA, джиу-джитсу и тренировок — концепт главной страницы Fightwear.ru.">
+  <title>Fightwear.ru — экипировка, которая работает</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="promo">
+    <div class="container promo__inner">
+      <span class="promo__message"><span aria-hidden="true">▣</span> Доставка по всей России</span>
+      <a href="#delivery">Подробные условия <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <div class="utility">
+    <div class="container utility__inner">
+      <nav class="utility__links" aria-label="Сервисное меню">
+        <a href="#payment">Оплата</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="utility__phone" href="tel:+78002008177">☎ &nbsp;+7 (800) 200-81-77</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__main">
+      <a class="brand" href="#" aria-label="Fightwear — главная">
+        <img src="assets/fightwear-logo.png" alt="FW Fightwear">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span><span class="sr-only">Открыть меню</span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Главное меню">
+        <div class="nav-catalog">
+          <button class="nav-link catalog-toggle" aria-expanded="false" aria-controls="catalog-menu">Каталог <span aria-hidden="true">⌄</span></button>
+          <div class="catalog-menu" id="catalog-menu">
+            <div><strong>По направлениям</strong><a href="#boxing">Бокс</a><a href="#mma">ММА</a><a href="#bjj">Джиу-джитсу</a><a href="#clothing">Одежда</a></div>
+            <div><strong>Экипировка</strong><a href="#protection">Защита</a><a href="#accessories">Аксессуары</a><a href="#brands">Бренды</a><a href="#sale">Распродажа</a></div>
+          </div>
+        </div>
+        <a class="nav-link" href="#new">Новинки</a>
+        <a class="nav-link" href="#premium">Премиум</a>
+        <a class="nav-link" href="#brands">Бренды</a>
+        <a class="nav-link nav-link--sale" href="#sale">Распродажа</a>
+      </nav>
+      <form class="search" role="search" id="search-form">
+        <button type="submit" aria-label="Искать">⌕</button>
+        <input id="search-input" type="search" placeholder="Поиск товаров" autocomplete="off" aria-label="Поиск товаров">
+        <div class="search-results" id="search-results" role="status" aria-live="polite"></div>
+      </form>
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Профиль" title="Профиль"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></button>
+        <button class="icon-button" aria-label="Избранное" title="Избранное" id="wishlist-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+        <button class="icon-button cart-button" aria-label="Корзина" title="Корзина" id="cart-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.3 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.5L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span class="cart-count" id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="Спортсмен в экипировке в тренировочном зале"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">FIGHTWEAR · ЭКИПИРОВКА ДЛЯ ЕДИНОБОРСТВ</p>
+        <h1 id="hero-title">Экипировка,<br>которая работает</h1>
+        <p class="hero__description">Товары для тренировок и соревнований<br class="desktop-only"> в боксе, ММА, джиу-джитсу и других единоборствах.</p>
+        <a class="button button--red" href="#categories">Выбрать экипировку <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero__tag">Тренируйся на своём уровне</div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow--red">НАЙДИ СВОЁ</p><h2>Выберите направление</h2></div>
+          <a class="text-link" href="#catalog-menu">Весь каталог <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" id="boxing" href="#products" data-category="Бокс">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=700&q=85" alt="Спортивная экипировка для бокса">
+            <span class="category-card__shade"></span><span class="category-card__title">Бокс <b>↗</b></span>
+          </a>
+          <a class="category-card" id="mma" href="#products" data-category="ММА">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=85" alt="Экипировка для ММА">
+            <span class="category-card__shade"></span><span class="category-card__title">ММА <b>↗</b></span>
+          </a>
+          <a class="category-card" id="bjj" href="#products" data-category="Джиу-джитсу">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=700&q=85" alt="Экипировка для джиу-джитсу">
+            <span class="category-card__shade"></span><span class="category-card__title">Джиу-джитсу <b>↗</b></span>
+          </a>
+          <a class="category-card" id="clothing" href="#products" data-category="Одежда">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=85" alt="Спортивная одежда">
+            <span class="category-card__shade"></span><span class="category-card__title">Одежда <b>↗</b></span>
+          </a>
+          <a class="category-card" id="protection" href="#products" data-category="Защита">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=700&q=85" alt="Спортивная защита">
+            <span class="category-card__shade"></span><span class="category-card__title">Защита <b>↗</b></span>
+          </a>
+          <a class="category-card" id="accessories" href="#products" data-category="Аксессуары">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517838277536-f4c9d7ca1a7c?auto=format&fit=crop&w=700&q=85" alt="Спортивные аксессуары">
+            <span class="category-card__shade"></span><span class="category-card__title">Аксессуары <b>↗</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Преимущества магазина">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon">◇</span><div><strong>Оригинальные товары</strong><small>Проверенные бренды</small></div></div>
+        <div class="trust-item" id="delivery"><span class="trust-icon">↗</span><div><strong>Доставка по России</strong><small>Удобные варианты доставки</small></div></div>
+        <div class="trust-item"><span class="trust-icon">♧</span><div><strong>Помощь с выбором</strong><small>Подбор экипировки под ваши задачи</small></div></div>
+        <div class="trust-item"><span class="trust-icon">⌖</span><div><strong>Магазин в Москве</strong><small>Самовывоз и консультация</small></div></div>
+      </div>
+    </section>
+
+    <section class="section brands-section" id="brands">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow--red">ПРОВЕРЕННЫЕ ИМЕНА</p><h2>Популярные бренды</h2></div><a class="text-link" href="#brands-list">Все бренды <span aria-hidden="true">→</span></a></div>
+        <div class="brands-list" id="brands-list">
+          <a href="#products">VENUM</a><a href="#products">UFC</a><a href="#products">adidas</a><a href="#products">TATAMI</a><a href="#products">KINGZ</a><a href="#products">HAYABUSA</a><a href="#products">FUJI</a><a href="#products">ATAMA</a><a href="#products">EVERLAST</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section popular-section" id="products">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow--red">ВЫБОР СПОРТСМЕНОВ</p><h2>Популярное сейчас</h2></div><a class="text-link" href="#new">Все товары <span aria-hidden="true">→</span></a></div>
+        <div class="product-grid">
+          <article class="product-card"><div class="product-visual product-visual--red"><span class="product-mark">FW</span><span class="product-symbol">◈</span></div><div class="product-info"><p>Бокс</p><h3>Боксерские перчатки</h3><button class="button button--outline add-to-cart">В корзину</button></div></article>
+          <article class="product-card"><div class="product-visual product-visual--black"><span class="product-mark">FW</span><span class="product-symbol">◉</span></div><div class="product-info"><p>ММА</p><h3>Перчатки для ММА</h3><button class="button button--outline add-to-cart">В корзину</button></div></article>
+          <article class="product-card"><div class="product-visual product-visual--white"><span class="product-mark">FW</span><span class="product-symbol">✳</span></div><div class="product-info"><p>Джиу-джитсу</p><h3>Кимоно для тренировок</h3><button class="button button--outline add-to-cart">В корзину</button></div></article>
+          <article class="product-card"><div class="product-visual product-visual--gray"><span class="product-mark">FW</span><span class="product-symbol">▰</span></div><div class="product-info"><p>Одежда</p><h3>Компрессионная одежда</h3><button class="button button--outline add-to-cart">В корзину</button></div></article>
+        </div>
+        <p class="prototype-note">Демонстрационный интерфейс: карточки и корзина работают локально, реальные товары и цены не подключены.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <img src="assets/fightwear-logo.png" alt="FW Fightwear" class="footer-logo">
+      <p>Экипировка для тех, кто выходит на тренировку.</p>
+      <div class="footer-links"><a href="#payment" id="payment">Оплата</a><a href="#delivery">Доставка</a><a href="#reviews" id="reviews">Отзывы</a><a href="mailto:info@fightwear.ru">Написать нам</a></div>
+      <small>© Fightwear.ru · Дизайн-концепция главной страницы</small>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
